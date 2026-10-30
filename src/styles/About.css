@@ -1,0 +1,348 @@
+
+/* =================================
+   BUYALI ABOUT PAGE
+================================= */
+
+.about-page {
+  width: 100%;
+  color: #172033;
+}
+
+/* COMMON TAG */
+
+.about-tag {
+  display: inline-block;
+  color: #155eef;
+  background: #edf4ff;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* HERO SECTION */
+
+.about-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #edf4ff, #ffffff, #e8efff);
+}
+
+.about-hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.about-hero h1 {
+  margin: 22px 0 18px;
+  color: #172033;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #155eef;
+}
+
+.about-hero p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* PRIMARY BUTTON */
+
+.about-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 23px;
+  background: #155eef;
+  color: #ffffff;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.about-primary-btn:hover {
+  background: #0f4dcc;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(21, 94, 239, 0.2);
+}
+
+/* INTRODUCTION */
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 45px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about-intro-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #155eef;
+  background: #edf4ff;
+  border-radius: 35px;
+}
+
+.about-intro-content h2 {
+  margin: 16px 0;
+  color: #172033;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.about-intro-content p {
+  margin: 0 0 14px;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* MISSION AND VISION */
+
+.about-purpose {
+  padding: 75px 20px;
+  background: #f7f9fc;
+}
+
+.about-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.purpose-card {
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.purpose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.07);
+}
+
+.purpose-icon,
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+  color: #155eef;
+  background: #edf4ff;
+  border-radius: 13px;
+}
+
+.purpose-card h3 {
+  margin: 0 0 12px;
+  color: #172033;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.purpose-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* WHY CHOOSE BUYALI */
+
+.about-why {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about-section-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-section-heading h2 {
+  margin: 17px 0 10px;
+  color: #172033;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.about-section-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-feature {
+  padding: 27px 22px;
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.about-feature:hover {
+  transform: translateY(-5px);
+  border-color: #c8d8ff;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.07);
+}
+
+.about-feature h3 {
+  margin: 0 0 10px;
+  color: #172033;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.about-feature p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* CALL TO ACTION */
+
+.about-cta {
+  padding: 75px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #edf4ff, #f8faff);
+}
+
+.about-cta h2 {
+  margin: 18px 0 12px;
+  color: #172033;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.about-cta p {
+  margin: 0 0 25px;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  .about-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 75px 18px;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+  .about-intro-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 25px;
+  }
+
+  .about-intro-content h2 {
+    font-size: 29px;
+  }
+
+  .about-purpose {
+    padding: 55px 18px;
+  }
+
+  .about-purpose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-why {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .about-cta {
+    padding: 60px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 16px;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+    letter-spacing: -1.2px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+  }
+
+  .about-primary-btn {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .about-features-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-feature {
+    padding: 23px;
+  }
+
+  .purpose-card {
+    padding: 25px;
+  }
+
+  .about-cta h2 {
+    font-size: 28px;
+  }
+
+  .about-cta p {
+    font-size: 14px;
+  }
+}

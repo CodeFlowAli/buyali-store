@@ -1,0 +1,13 @@
+
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/products
+Disallow: /admin/categories
+Disallow: /admin/payment-methods
+Disallow: /admin/return-policies
+
+Sitemap: https://buyali.co.uk/sitemap.xml

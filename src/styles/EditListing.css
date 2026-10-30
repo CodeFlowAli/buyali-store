@@ -1,0 +1,149 @@
+
+.edit-listing-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px 24px;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.edit-listing-page > button:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.edit-listing-page h1 {
+  margin-bottom: 25px;
+  color: var(--text-primary);
+  font-size: 28px;
+}
+
+.edit-listing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.edit-listing-form label {
+  margin-top: 10px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-listing-form input,
+.edit-listing-form textarea,
+.edit-listing-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  outline: none;
+  background: white;
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.edit-listing-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-listing-form input:focus,
+.edit-listing-form textarea:focus,
+.edit-listing-form select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.edit-listing-form h3 {
+  margin-top: 20px;
+  color: var(--text-primary);
+}
+
+.edit-existing-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 12px 0;
+}
+
+.edit-image-item {
+  position: relative;
+  width: 125px;
+}
+
+.edit-image-item img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.edit-image-item button {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background: #fee2e2;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.edit-listing-form > button:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.edit-listing-form > button:last-child:hover {
+  background: var(--primary-dark);
+}
+
+.edit-listing-form > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .edit-listing-page {
+    padding: 22px 14px;
+  }
+
+  .edit-listing-page h1 {
+    font-size: 23px;
+  }
+
+  .edit-listing-form {
+    padding: 18px;
+  }
+}

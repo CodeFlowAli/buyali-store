@@ -1,0 +1,286 @@
+
+.create-listing-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: var(--bg-primary);
+}
+
+.listing-header {
+  max-width: 1050px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.listing-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.listing-back:hover {
+  color: var(--primary);
+}
+
+.listing-header h1 {
+  margin-bottom: 7px;
+  color: var(--text-primary);
+  font-size: 28px;
+}
+
+.listing-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.listing-status {
+  padding: 8px 13px;
+  border-radius: 30px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.listing-form {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.listing-section {
+  padding: 28px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.listing-section-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding-bottom: 22px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+  color: var(--primary);
+}
+
+.listing-section-title > svg {
+  margin-top: 3px;
+}
+
+.listing-section-title h2 {
+  margin-bottom: 5px;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.listing-section-title p {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.listing-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 21px;
+}
+
+.listing-field:last-child {
+  margin-bottom: 0;
+}
+
+.listing-field label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.listing-field input,
+.listing-field textarea,
+.listing-field select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  outline: none;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 13px;
+  transition: var(--transition);
+}
+
+.listing-field input:focus,
+.listing-field textarea:focus,
+.listing-field select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.listing-field textarea {
+  resize: vertical;
+  min-height: 90px;
+  line-height: 1.7;
+}
+
+.listing-field small {
+  color: var(--text-light);
+  font-size: 11px;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.listing-upload {
+  min-height: 160px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px !important;
+  padding: 25px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-primary);
+  color: var(--primary) !important;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.listing-upload:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.listing-upload strong {
+  font-size: 14px;
+}
+
+.listing-upload span {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.listing-upload input {
+  display: none;
+}
+
+.listing-image-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.listing-preview-item {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+}
+
+.listing-preview-item img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.listing-preview-item button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #fef2f2;
+  color: var(--danger);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.listing-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 10px 0 30px;
+}
+
+.listing-cancel,
+.listing-submit {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 20px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.listing-cancel {
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.listing-submit {
+  border: none;
+  background: var(--primary);
+  color: white;
+  transition: var(--transition);
+}
+
+.listing-submit:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 650px) {
+  .create-listing-page {
+    padding: 22px 14px;
+  }
+
+  .listing-header {
+    align-items: flex-start;
+  }
+
+  .listing-header h1 {
+    font-size: 23px;
+  }
+
+  .listing-section {
+    padding: 20px 15px;
+  }
+
+  .listing-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .listing-actions {
+    flex-direction: column-reverse;
+  }
+
+  .listing-cancel,
+  .listing-submit {
+    width: 100%;
+  }
+}
